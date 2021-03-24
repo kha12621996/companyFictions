@@ -28,7 +28,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAhHsWWY5j9ey2GhJX_TejSMruecwDhYGE'
+      apiKey: 'GOOGLE API KEY'
     }),
     FormsModule
   ],

@@ -16,8 +16,8 @@ export class ContactComponent implements OnInit {
   messages = '';
 
   // Maps
-  latitude = 48.785877;
-  longitude = 9.20793;
+  latitude = '';
+  longitude = '';
   locationChosen = false;
 
   onChoseLocation(event: any){
