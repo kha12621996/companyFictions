@@ -1,0 +1,50 @@
+<section class="contact">
+    <div class="container">
+        <h1 class="text-center">Contact</h1>
+        <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form (ngSubmit)="submitForm()">
+                        <div class="mb-3">
+                        <label for="exampleInput" class="form-label">Email address</label>
+                        <input type="email"  name="email" class="form-control" id="contactFormEmail" aria-describedby="emailHelp" [(ngModel)]="email">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInput2" class="form-label">Firstname</label>
+                        <input type="text" name="firstname" class="form-control" id="exampleInput2" [(ngModel)]="firstname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInput3" class="form-label">Surename</label>
+                            <input type="text" name="surename" class="form-control" id="exampleInput3" [(ngModel)]="surename">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInput4" class="form-label">Adress</label>
+                            <input type="text" name="adress" class="form-control" id="exampleInput4" [(ngModel)]="adress">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInput5" class="form-label">Messages</label>
+                            <textarea class="form-control" name="messages" aria-label="With textarea"  [(ngModel)]="messages"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Terms and Conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-lg-12">Submit</button>
+                    </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="adress pl-5">
+                    <p>
+                        BEFJK-Cooperation UG<br>
+                        Ostendplatz 77<br>
+                        Stuttgart-Ost<br>
+                    </p>
+                    <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChoseLocation($event)">
+                        <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+                    </agm-map>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

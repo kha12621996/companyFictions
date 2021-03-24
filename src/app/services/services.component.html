@@ -1,0 +1,17 @@
+<section class="services">
+    <div class="container">
+        <h1 class="text-center">services</h1>
+
+        <div class="row  mt-5">
+            <div class="col-lg-3 mb-5" *ngFor="let sv of service">
+                <div class="box shadow-sm">
+                    <img src="{{sv.image }}" width="100%">
+                    <h4 class="mt-2">{{ sv.name }}</h4>
+                    <p class="mt-2">{{ sv.description }}</p>
+                    <button class="btn btn-primary btn-sm mt-2">read more</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

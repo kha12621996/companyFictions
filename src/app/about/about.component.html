@@ -1,0 +1,31 @@
+<section class="about">
+    <div class="container">
+        <h1 class="text-center mb-5">About</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of 
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <div class="row  mt-5">
+            <div class="col-lg-4 mb-5" *ngFor="let tem of teams">
+                    <img src="{{tem.image }}" width="100%">
+                    <h4 class="mt-2 text-center">{{ tem.name }}</h4>
+                    <p class="text-center">{{ tem.jobs }}</p>
+            </div>
+
+        </div>
+
+        <div class="follow text-center">
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagramm</a>
+            <a href="#">Twitch</a>
+        </div>
+    </div>
+</section>
+

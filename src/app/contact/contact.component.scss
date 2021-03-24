@@ -1,0 +1,19 @@
+.contact {
+  background-color: #eff6ff;
+  padding: 140px 100px;
+}
+
+.adress {
+  font-size: 18px;
+}
+
+agm-map {
+  height: 450px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    background-color: #eff6ff;
+    padding: 140px 30px;
+  }
+}
